@@ -1,0 +1,32 @@
+{
+  "name": "@hpsos/android",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "g:build": "./gradlew build",
+    "lint": "eslint .",
+    "lint-fix": "yarn lint --fix",
+    "prepare": "husky"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@changesets/cli": "2.27.7",
+    "@commitlint/cli": "19.4.0",
+    "@commitlint/config-conventional": "19.2.2",
+    "@hyperse/eslint-config-hyperse": "^1.1.3",
+    "@types/node": "^22.5.0",
+    "commitizen": "4.3.0",
+    "cross-env": "7.0.3",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^9.9.0",
+    "husky": "9.1.5",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  },
+  "packageManager": "yarn@4.4.0"
+}
