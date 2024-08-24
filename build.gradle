@@ -3,17 +3,15 @@ plugins {
   id ('to.wetransform.semantic-release-version') version '2.1.1'
 }
 
+apply plugin: 'application'
+
+version = '0.1.0'
+
 repositories {
   mavenCentral()
 }
 
-java {
-  toolchain {
-    languageVersion = JavaLanguageVersion.of(11)
-  }
-}
 
-group = "org.hpsos"
 
 dependencies {
   implementation 'org.ajoberstar.grgit:grgit-core:5.2.2'
